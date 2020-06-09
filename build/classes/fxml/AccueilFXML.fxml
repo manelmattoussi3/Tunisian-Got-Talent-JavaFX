@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccueilFXMLController">
+   <children>
+      <AnchorPane layoutX="180.0" prefHeight="505.0" prefWidth="589.0" style="-fx-background-color: #6f002a;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="99.0" layoutY="29.0" style="-fx-text-fill: #7ddaf8;" text="Tunisian Got Talent" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img3" fitHeight="158.0" fitWidth="214.0" layoutX="280.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/s1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="134.0" fitWidth="353.0" layoutX="154.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/d3bf95dec826eeb8230b3a9f7afa6b19.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnDeconnecter" layoutX="441.0" layoutY="17.0" mnemonicParsing="false" onAction="#btnDeconnecterAction" prefHeight="18.0" prefWidth="68.0" text="Logout" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/homme.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="email" layoutX="401.0" layoutY="445.0" onMouseClicked="#handleButton9Action" />
+            <Label fx:id="reclamation" layoutX="26.0" layoutY="433.0" onMouseClicked="#handleButton10Action" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #7ddaf8;" text="Envoyer une Reclamation" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="505.0" prefWidth="185.0" style="-fx-background-color: #6f002a;">
+         <children>
+            <Button fx:id="btnPublicite" layoutX="-10.0" layoutY="99.0" mnemonicParsing="false" onAction="#btnPubliciteAction" prefHeight="85.0" prefWidth="185.0" style="-fx-text-fill: #7ddaf8; -fx-background-color: #6f002a;" text="Publicité">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDemande" layoutY="174.0" mnemonicParsing="false" onAction="#btnDemandeAction" prefHeight="85.0" prefWidth="185.0" style="-fx-text-fill: #7ddaf8; -fx-background-color: #6f002a;" text="Demande">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="img5" fitHeight="85.0" fitWidth="185.0" layoutX="3.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/sponsors1.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="101.0" fitWidth="169.0" layoutX="12.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Photo/notes-de-musique0.gif" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Button layoutX="-9.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnActualite" prefHeight="85.0" prefWidth="185.0" style="-fx-background-color: #6f002a; -fx-text-fill: #7ddaf8;" text="Actualités">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCandidat1" layoutX="-5.0" layoutY="242.0" mnemonicParsing="false" onAction="#btnCandidatAction" prefHeight="85.0" prefWidth="185.0" style="-fx-background-color: #6f002a; -fx-text-fill: #7ddaf8;" text="Candidats">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

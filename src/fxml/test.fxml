@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="826.0" style="-fx-background-color: #6f002a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TestController">
+   <children>
+      <Button fx:id="btnBack" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackAction" text="Back" />
+      <Button fx:id="btnExit" layoutX="762.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnExitAction" text="Exit" />
+      <Button fx:id="btnConsulter" layoutX="267.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnConsulterAction" text="Consulter" />
+      <Button fx:id="btnAjouter" layoutX="344.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnAjouterAction" text="Ajouter" />
+      <Button fx:id="btnModifier" layoutX="413.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnModifierAction" text="Modifier" />
+      <Button fx:id="btnSupprimer" layoutX="484.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnSupprimerAction" text="Supprimer" />
+      <Label layoutX="311.0" layoutY="22.0" style="-fx-text-fill: #7ddaf8 #7ddaf8; -fx-font-size: 23;" text="Liste des Publicités" />
+      <TableView fx:id="table" layoutX="48.0" layoutY="194.0" prefHeight="301.0" prefWidth="757.0">
+         <columns>
+            <TableColumn fx:id="description" prefWidth="131.0" text="Candidat" />
+            <TableColumn fx:id="date_debut" prefWidth="181.0" text="Description" />
+            <TableColumn fx:id="date_fin" prefWidth="147.0" text="Type" />
+            <TableColumn fx:id="txtDateDebut" prefWidth="149.0" text="Date_Debut" />
+            <TableColumn fx:id="txtDateFin" prefWidth="148.0" text="Date_Fin" />
+         </columns>
+      </TableView>
+      <Button layoutX="598.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnLineChartAction" text="BarChart" />
+   </children>
+</AnchorPane>

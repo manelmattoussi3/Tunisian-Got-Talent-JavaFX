@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterConseilController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" accessibleRole="BUTTON" focusTraversable="true" layoutX="-1.0" layoutY="-4.0" prefHeight="783.0" prefWidth="869.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="theLabel1" layoutX="260.0" layoutY="192.0" />
+            <Button fx:id="btnAjouter" layoutX="213.0" layoutY="699.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="64.0" prefWidth="182.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <TextField fx:id="txtDescription" layoutX="325.0" layoutY="318.0" prefHeight="38.0" prefWidth="242.0" promptText="description" />
+            <Label fx:id="leb1" layoutX="262.0" layoutY="9.0" prefHeight="54.0" prefWidth="300.0" text="Ajouter Conseil" textFill="#ee0983">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold Italic" size="44.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="CmbCandidat" layoutX="326.0" layoutY="462.0" prefHeight="39.0" prefWidth="242.0" />
+            <Button fx:id="btnChoisirImage" layoutX="334.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnChoisirImageAction" prefHeight="39.0" prefWidth="228.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Browse" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnBack" layoutX="758.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnExit" layoutX="820.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnExitAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Exit" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Button layoutX="502.0" layoutY="703.0" mnemonicParsing="false" onAction="#ViderConseil" prefHeight="64.0" prefWidth="167.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Vider" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtimg" layoutX="504.0" layoutY="568.0" style="-fx-background-color: transparent;" />
+            <ComboBox fx:id="CmbCoach" layoutX="327.0" layoutY="536.0" prefHeight="39.0" prefWidth="242.0" />
+            <TextField fx:id="txtType" layoutX="324.0" layoutY="389.0" prefHeight="39.0" prefWidth="242.0" promptText="categorie" />
+            <Pane layoutX="9.0" layoutY="67.0" prefHeight="223.0" prefWidth="855.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="223.0" fitWidth="214.0" layoutX="7.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="img/jkk.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="223.0" fitWidth="241.0" layoutX="331.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="img/jk.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="214.0" fitWidth="214.0" layoutX="627.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="img/ui.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="labe14" layoutX="206.0" layoutY="399.0" prefHeight="27.0" prefWidth="100.0" text="Categorie" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labe15" layoutX="214.0" layoutY="537.0" prefHeight="17.0" prefWidth="55.0" text="Coach" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labe151" layoutX="206.0" layoutY="472.0" prefHeight="27.0" prefWidth="100.0" text="Candidat" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="labe152" layoutX="219.0" layoutY="612.0" prefHeight="17.0" prefWidth="55.0" text="Image" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labe11" layoutX="198.0" layoutY="321.0" prefHeight="27.0" prefWidth="111.0" text="Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

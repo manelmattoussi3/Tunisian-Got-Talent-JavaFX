@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6f002a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterDemandeController">
+   <children>
+      <Label fx:id="leb" layoutX="179.0" layoutY="33.0" style="-fx-text-fill: #7ddaf8; -fx-font-size: 25;" text="Envoyer Demande" />
+      <Label fx:id="leb1" layoutX="38.0" layoutY="120.0" style="-fx-text-fill: #ffffff; -fx-font-size: 22;" text="Description :" />
+      <Label fx:id="leb2" layoutX="80.0" layoutY="179.0" style="-fx-text-fill: #ffffff; -fx-font-size: 22;" text="Type :" />
+      <Label fx:id="leb3" layoutX="63.0" layoutY="239.0" style="-fx-text-fill: #ffffff; -fx-font-size: 22;" text="Candidat :" />
+      <Label fx:id="leb5" layoutX="71.0" layoutY="283.0" style="-fx-text-fill: #ffffff; -fx-font-size: 22;" text="Date :" />
+      <TextField fx:id="txtDescription" layoutX="172.0" layoutY="123.0" promptText="description..." />
+      <TextField fx:id="txtType" layoutX="172.0" layoutY="180.0" promptText="type...." />
+      <DatePicker fx:id="txtDate" layoutX="159.0" layoutY="299.0" />
+      <ImageView fitHeight="235.0" fitWidth="234.0" layoutX="366.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ec022261601059.5ab53a56aa10d.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="157.0" layoutX="458.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ff0e63c3aeb7b92e236f2808011b847b.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="CmbCandidat" layoutX="171.0" layoutY="240.0" prefWidth="150.0" />
+      <Button fx:id="btnExit" layoutX="508.0" layoutY="20.0" mnemonicParsing="false" onAction="#btnExitAction" text="Exit" />
+      <Button fx:id="btnAjouterDemande" layoutX="190.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnAjouterDemandeAction" text="Envoyer Demande" />
+      <Button fx:id="btnAnnulerDemande" layoutX="337.0" layoutY="348.0" mnemonicParsing="false" onAction="#btnAnnulerDemandeAction" text="Annuler" />
+      <Button fx:id="btnBack" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnBackAction" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" accessibleRole="BUTTON" focusTraversable="true" prefHeight="610.0" prefWidth="838.0" style="-fx-background-color: #6f002a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjoutSponsoringFXLController">
+   <children>
+      <Label fx:id="theLabel" layoutX="260.0" layoutY="192.0" />
+      <Button fx:id="btnAjouter" layoutX="333.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnAjouterAction" prefHeight="17.0" prefWidth="72.0" text="Ajouter" />
+      <TextField fx:id="txtDescription" layoutX="147.0" layoutY="92.0" promptText="description...." />
+      <TextField fx:id="txtType" layoutX="147.0" layoutY="139.0" promptText="type...." />
+      <Label fx:id="leb1" layoutX="28.0" layoutY="89.0" style="-fx-text-fill: #ffffff; -fx-font: 16;" text="Description :">
+         
+      </Label>
+      <Label fx:id="leb2" layoutX="57.0" layoutY="136.0" style="-fx-font-size: 16; -fx-text-fill: #ffffff;" text="Type :">
+         
+      </Label>
+      <Label fx:id="leb3" layoutX="40.0" layoutY="194.0" style="-fx-font-size: 20; -fx-text-fill: #ffffff;" text="Candidat :">
+              </Label>
+      <Label fx:id="leb5" layoutX="53.0" layoutY="240.0" style="-fx-font-size: 16; -fx-text-fill: #ffffff;" text="Image">
+        
+      </Label>
+      <Label fx:id="leb" layoutX="186.0" layoutY="21.0" style="-fx-font-size: 25; -fx-text-fill: cyan;" text="Ajouter Publicité">
+         
+      </Label>
+      <ImageView fitHeight="302.0" fitWidth="206.0" layoutX="610.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/danseuse%20fond%20transparent.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="CmbCandidat" layoutX="147.0" layoutY="197.0" prefWidth="150.0" />
+      <Button fx:id="btnChoisirImage" layoutX="167.0" layoutY="243.0" mnemonicParsing="false" onAction="#btnChoisirImageAction" text="Browse..." />
+      <Button fx:id="btnBack" layoutX="27.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnBackAction" text="Back" />
+      <Button fx:id="btnExit" layoutX="760.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnExitAction" text="Exit" />
+      <Button fx:id="btnAnnuler" layoutX="426.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnAnullerAction" text="Annuler" />
+      <ImageView fitHeight="43.0" fitWidth="90.0" layoutX="398.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ecrire.gif" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="txtDateDebut" layoutX="142.0" layoutY="301.0" prefHeight="36.0" prefWidth="206.0" />
+      <DatePicker fx:id="txtDateFin" layoutX="149.0" layoutY="365.0" prefHeight="36.0" prefWidth="206.0" />
+      <Label layoutX="39.0" layoutY="311.0" text="Date_Debut" textFill="WHITE" />
+      <Label layoutX="49.0" layoutY="377.0" text="Date_Fin" textFill="WHITE" />
+   </children>
+   
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+        
+      </Lighting>
+   </effect>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="753.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StatistiqueViewController">
+   <children>
+      <Pane layoutY="77.0" prefHeight="818.0" prefWidth="924.0" style="-fx-background-color: #6f002a;">
+         <children>
+            <Label layoutX="112.0" layoutY="40.0" prefHeight="45.0" prefWidth="787.0" text="Bienvenue à la nouvelle Session de formation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="449.0" endY="-19.0" layoutX="423.0" layoutY="125.0" startX="-357.0" startY="-19.0" stroke="WHITE" />
+            <JFXComboBox fx:id="CmbCandidat" focusColor="WHITE" layoutX="644.0" layoutY="244.0" prefHeight="57.0" prefWidth="263.0" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="Cmbformation" focusColor="WHITE" layoutX="632.0" layoutY="462.0" prefHeight="57.0" prefWidth="263.0" unFocusColor="WHITE" />
+            <JFXButton layoutX="612.0" layoutY="640.0" onAction="#btnAjouterAction" prefHeight="52.0" prefWidth="170.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px;" text="Participer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="avis" layoutX="653.0" layoutY="460.0" style="-fx-background-color: transparent;" />
+            <Label layoutX="524.0" layoutY="182.0" text="Selectionner votre nom" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="522.0" layoutY="389.0" text="choisissez une formation" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="614.0" fitWidth="481.0" layoutX="11.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="img/jk.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="27.0" layoutY="12.0" prefHeight="43.0" prefWidth="216.0" text="TunisiaGot tallent ">
+         <font>
+            <Font name="Segoe UI Black" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="70.0" layoutX="511.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Sprint/src/images/img.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nomutlisateur" layoutX="574.0" layoutY="11.0" onMouseClicked="#handleButtonAction" prefHeight="31.0" prefWidth="237.0" text="nasri.mohamedamin@esprit.tn">
+         <font>
+            <Font name="Segoe UI Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btndeconnextion" layoutX="816.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#handleButton6Action" text="Deconnextion" />
+      <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="26.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_Google_Wallet_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

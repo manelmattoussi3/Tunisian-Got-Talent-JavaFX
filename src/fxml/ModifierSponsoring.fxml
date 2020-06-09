@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="leb" prefHeight="545.0" prefWidth="785.0" style="-fx-background-color: #6f002a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifierSponsoringController">
+   <children>
+      <Label layoutX="51.0" layoutY="104.0" style="-fx-font-size: 16; -fx-text-fill: #ffffff;" text="Description :" />
+      <Label layoutX="72.0" layoutY="149.0" style="-fx-font-size: 16; -fx-text-fill: #ffffff;" text="Type : " />
+      <Label layoutX="59.0" layoutY="199.0" style="-fx-text-fill: #ffffff; -fx-font-size: 16;" text="Candidat :" />
+      <Label layoutX="70.0" layoutY="245.0" style="-fx-text-fill: #ffffff; -fx-font-size: 16;" text="Image :" />
+      <TextField fx:id="txtDescription" layoutX="172.0" layoutY="104.0" promptText="description..." />
+      <TextField fx:id="txtType" layoutX="172.0" layoutY="149.0" promptText="type..." />
+      <ImageView fitHeight="206.0" fitWidth="194.0" layoutX="430.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photo/41ea9a61601059.5ab531c638b23.gif" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="CmbCandidat" layoutX="172.0" layoutY="199.0" prefWidth="150.0" />
+      <Button fx:id="btnChoisirImage" layoutX="185.0" layoutY="245.0" mnemonicParsing="false" onAction="#btnChoisirImage" text="Browser..." />
+      <Button fx:id="btnBack" layoutX="29.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnBackAction" text="Back" />
+      <Button fx:id="btnExit" layoutX="519.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnExitAction" text="Exit" />
+      <Button fx:id="btnModifier" layoutX="348.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnModifierAction" text="Modifier" />
+      <Button fx:id="btnAnnuler" layoutX="442.0" layoutY="475.0" mnemonicParsing="false" onAction="#btnAnnulerAction" text="Annuler" />
+      <Label layoutX="170.0" layoutY="30.0" style="-fx-font-size: 27; -fx-text-fill: #7ddaf8;" text="Modifier Publicité" />
+      <Label fx:id="er1" layoutX="344.0" layoutY="130.0" />
+      <Label fx:id="er2" layoutX="344.0" layoutY="189.0" />
+      <Label fx:id="er3" layoutX="344.0" layoutY="250.0" />
+      <Label fx:id="er4" layoutX="336.0" layoutY="307.0" />
+      
+      
+      <ImageView fitHeight="59.0" fitWidth="72.0" layoutX="399.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photo/ecrire2.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="304.0" text="Date_Debut" textFill="WHITE" />
+      <Label layoutX="88.0" layoutY="387.0" text="Date_Fin" textFill="WHITE" />
+      <TextField fx:id="txtdatedebut" layoutX="155.0" layoutY="300.0" />
+      <TextField fx:id="txtdatefin" layoutX="165.0" layoutY="384.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6f002a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherDemandeController">
+   <children>
+      <Label fx:id="leb" layoutX="177.0" layoutY="27.0" style="-fx-text-fill: #7ddaf8; -fx-font-size: 25;" text="Liste des Demandes" />
+      <TableView fx:id="table" layoutX="15.0" layoutY="155.0" prefHeight="225.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="descriptionColumn" prefWidth="302.0" text="Description" />
+            <TableColumn fx:id="typeColumn" prefWidth="81.0" text="Type" />
+            <TableColumn fx:id="candidatsColumn" prefWidth="106.0" text="Candidats" />
+            <TableColumn fx:id="dateColumn" text="Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="15.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnBackAction" text="Back" />
+      <Button fx:id="btnExit" layoutX="531.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnExitAction" text="Exit" />
+      <Button fx:id="btnSupprimerDemande" layoutX="473.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnSupprimerDemandeAction" text="Supprimer" />
+      <Button fx:id="btnAjouterDemande" layoutX="341.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnAjouterDemandeAction" text="Envoyer Demande" />
+      <Button fx:id="btnInvitation" layoutX="203.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnInvitationAction" text="Mes demandes" />
+   </children>
+</AnchorPane>

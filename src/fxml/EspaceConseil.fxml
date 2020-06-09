@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="763.0" prefWidth="1014.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EspaceConseilController">
+   <children>
+      <Line endX="927.2928466796875" endY="22.0" layoutX="142.0" layoutY="674.0" startX="-142.0" startY="28.0" stroke="#ee0983" />
+      <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="101.0" prefWidth="1071.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="311.0" layoutY="32.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#ee0983">
+               <font>
+                  <Font name="Arial Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="3.0" layoutY="30.0" mnemonicParsing="false" onAction="#DashBord" prefHeight="32.0" prefWidth="54.0" style="-fx-border-color: #00abab; -fx-background-color: transparent; -fx-border-radius: 10px;" text="Retour" textFill="#ee0983" />
+            <Button layoutX="1017.0" layoutY="27.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sortie" textFill="#ee0983">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="244.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Google_Wallet_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="914.0" layoutY="714.0" text="Tunisian Got Talent" textFill="#00abab">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane layoutX="15.0" layoutY="95.0" prefHeight="175.0" prefWidth="1037.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="i2" fitHeight="150.0" fitWidth="200.0" layoutX="438.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/img/oo.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="i1" fitHeight="168.0" fitWidth="269.0" layoutX="50.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/img/papiers-peints-quartet-de-jazz.jpg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="i3" fitHeight="150.0" fitWidth="279.0" layoutX="760.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/img/music.gif" />
+         </image>
+      </ImageView>
+      <Line endX="927.2928466796875" endY="22.0" layoutX="152.0" layoutY="260.0" startX="-152.0" startY="22.0" stroke="#ee0983" />
+      <Button layoutX="25.0" layoutY="296.0" mnemonicParsing="false" onAction="#Chat" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Comminuquer avec votre Coach" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConsulter" layoutX="535.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnConsulterAction" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Consulter à un Conseil" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableconseil" layoutX="118.0" layoutY="402.0" prefHeight="276.0" prefWidth="929.0" style="-fx-border-color: #ee0983;">
+         <columns>
+            <TableColumn fx:id="descriptionco" prefWidth="225.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Categorie" />
+            <TableColumn fx:id="categori" prefWidth="207.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Description" />
+            <TableColumn fx:id="image" prefWidth="210.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Coach" />
+            <TableColumn fx:id="coa" prefWidth="286.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Image" />
+         </columns>
+      </TableView>
+      <Button fx:id="notifbutton" layoutX="1024.0" layoutY="332.0" mnemonicParsing="false" onAction="#Notifiactionaction" prefHeight="7.0" prefWidth="16.0" style="-fx-background-color: transparent;" />
+   </children>
+</AnchorPane>

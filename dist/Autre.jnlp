@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Autre.jnlp">
+  <information>
+    <title>Autre</title>
+    <vendor>DevelopAndroid</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Autre.jar" size="111911812" download="eager" />
+    <jar href="lib\PDFjet.jar" size="265476" download="eager" />
+    <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\itextpdf-5.5.10.jar" size="2290510" download="eager" />
+    <jar href="lib\javax.mail-1.4.4.jar" size="495041" download="eager" />
+    <jar href="lib\javax.mail-1.6.1.jar" size="654100" download="eager" />
+    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\jfoenix-8.0.8(1).jar" size="2708772" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\poi-3.11-beta2.jar" size="2054958" download="eager" />
+    <jar href="lib\poi-ooxml-3.11-beta2.jar" size="1111398" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-3.11-beta2.jar" size="5161257" download="eager" />
+    <jar href="lib\stax-api-1.0.1.jar" size="26514" download="eager" />
+    <jar href="lib\twilio-7.0.0-jar-with-dependencies.jar" size="6928990" download="eager" />
+    <jar href="lib\twilio-7.21.0-jar-with-dependencies.jar" size="8861179" download="eager" />
+    <jar href="lib\twilio-7.21.0-javadoc.jar" size="9178434" download="eager" />
+    <jar href="lib\twilio-7.21.0-sources.jar" size="1890531" download="eager" />
+    <jar href="lib\twilio-7.21.0.jar" size="2842507" download="eager" />
+    <jar href="lib\xmlbeans-2.6.0.jar" size="2730866" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="home.Main"  name="Autre" />
+  <update check="always"/>
+</jnlp>

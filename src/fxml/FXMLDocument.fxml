@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-radius: 5px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLDocumentController">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="132.0" prefWidth="1000.0" style="-fx-background-color: #6f002a;">
+         <children>
+            <Label alignment="CENTER" prefHeight="134.0" prefWidth="1000.0" text="Interface d'administration du module actualité" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="1001.0" text="Service Actualité" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="23.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <Label layoutX="33.0" layoutY="189.0" prefHeight="31.0" prefWidth="120.0" text="Titre ">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="261.0" text="Contenu">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="473.0" text="Catégorie">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="130.0" layoutY="180.0" prefHeight="50.0" prefWidth="414.0" style="-fx-border-color: #808080; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <TextField fx:id="tftitre" prefHeight="49.0" prefWidth="412.0" promptText="Titre" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ComboBox fx:id="tfcombo" layoutX="130.0" layoutY="473.0" prefHeight="31.0" prefWidth="414.0" promptText="Choisir la catégorie" style="-fx-border-color: #808080; -fx-border-radius: 5px;" />
+      <HBox layoutX="130.0" layoutY="252.0" prefHeight="199.0" prefWidth="414.0" style="-fx-border-color: #808080; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <children>
+            <TextArea fx:id="tfcontenu" prefHeight="200.0" prefWidth="200.0" promptText="Contenu de l'actualité" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextArea>
+         </children>
+      </HBox>
+      <Button layoutX="33.0" layoutY="532.0" mnemonicParsing="false" onAction="#AjouterActualite" prefHeight="48.0" prefWidth="174.0" style="-fx-background-color: #6f002a; -fx-background-radius: 5px;" text="Valider l'actualité" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="680.0" layoutY="181.0" mnemonicParsing="false" onAction="#OpenCategorie" prefHeight="48.0" prefWidth="211.0" style="-fx-background-color: #6f002a; -fx-background-radius: 5px;" text="Gérer les catégories" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="489.0" layoutY="532.0" mnemonicParsing="false" onAction="#modifierActualite" prefHeight="48.0" prefWidth="211.0" style="-fx-background-color: #6f002a; -fx-background-radius: 5px;" text="Modifier l'actualité" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="248.0" layoutY="532.0" mnemonicParsing="false" onAction="#supprimerActualite" prefHeight="48.0" prefWidth="211.0" style="-fx-background-color: #6f002a; -fx-background-radius: 5px;" text="Supprimer l'actualité" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listview" layoutX="580.0" layoutY="252.0" onMouseClicked="#onMouseClicked" prefHeight="200.0" prefWidth="414.0" />
+   </children>
+</AnchorPane>

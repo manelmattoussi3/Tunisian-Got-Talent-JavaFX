@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="763.0" prefWidth="1058.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.VoirPlusController">
+   <children>
+      <Pane layoutX="-1.0" layoutY="-2.0" prefHeight="85.0" prefWidth="1066.0" style="-fx-background-color: black;">
+         <children>
+            <Button layoutX="989.0" layoutY="21.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Back" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="319.0" layoutY="23.0" prefHeight="36.0" prefWidth="382.0" text="Formation Musique" textFill="#00abab">
+               <font>
+                  <Font name="Britannic Bold" size="35.0" />
+               </font>
+            </Label>
+            <Button layoutX="918.0" layoutY="23.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Exit" textFill="#ee0983">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Line endX="934.0" endY="3.0" layoutX="131.0" layoutY="80.0" startX="-131.99996948242188" stroke="#ee0983" />
+      <MediaView fx:id="mediaview1" fitHeight="400.0" fitWidth="400.0" layoutX="37.0" layoutY="109.0" />
+      <MediaView fx:id="mediaview2" fitHeight="400.0" fitWidth="400.0" layoutX="631.0" layoutY="119.0" />
+      <Button layoutX="37.0" layoutY="557.0" mnemonicParsing="false" onAction="#onclickbtn_play1" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Play" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="552.0" mnemonicParsing="false" onAction="#onclickbtn_play2" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Play" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="743.0" layoutY="552.0" mnemonicParsing="false" onAction="#onclickbtn_pause2" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Pause" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="135.0" layoutY="555.0" mnemonicParsing="false" onAction="#onclickbtn_pause1" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Pause" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="839.0" layoutY="551.0" mnemonicParsing="false" onAction="#onclickbtn_stop2" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Stop" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="555.0" mnemonicParsing="false" onAction="#onclickbtn_stop1" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Stop" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Slider fx:id="slider" layoutX="910.0" layoutY="563.0" />
+      <Slider fx:id="slider1" layoutX="328.0" layoutY="566.0" />
+      <Rating fx:id="rating" layoutX="786.0" layoutY="618.0" onMouseClicked="#Evaluation" />
+      <Rating fx:id="rating1" layoutX="152.0" layoutY="618.0" onMouseClicked="#Evaluation" />
+      <Label layoutX="902.0" layoutY="721.0" text="Tunisian Got Talent" textFill="#00abab">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="944.29296875" endY="7.0" layoutX="122.0" layoutY="695.0" startX="-121.99998474121094" startY="7.0" stroke="#ee0983" />
+   </children>
+</AnchorPane>

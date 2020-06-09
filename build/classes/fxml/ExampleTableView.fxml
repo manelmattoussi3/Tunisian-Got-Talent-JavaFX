@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="976.0" prefWidth="1243.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ExampleTableViewController">
+   <children>
+      <Pane layoutY="86.0" prefHeight="890.0" prefWidth="210.0" style="-fx-background-color: #6f002a;">
+         <children>
+            <ImageView fx:id="I1" fitHeight="50.0" fitWidth="41.0" layoutX="5.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="img/web-house-.png" />
+                </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="241.0" prefHeight="41.0" prefWidth="178.0" text="    Formation" textFill="#1a1a1bf0">
+               <font>
+                  <Font name="Bell MT Italic" size="32.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <ImageView fx:id="I16" fitHeight="50.0" fitWidth="41.0" layoutX="5.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="img/cc.png" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="I6" fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="img/education.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="50.0" layoutY="53.0" mnemonicParsing="false" onAction="#modifeScreenButtonPushed" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Accueil" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="61.0" layoutY="431.0" mnemonicParsing="false" onAction="#passeScreenButtonPushed" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Conseil" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Button>
+            <Pane layoutY="-86.0" prefHeight="78.0" prefWidth="1243.0" style="-fx-background-color: white;" />
+            <Label layoutX="104.0" layoutY="-70.0" prefHeight="43.0" prefWidth="216.0" text="TunisiaGot tallent ">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="70.0" layoutX="674.0" layoutY="-77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Sprint/src/images/img.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nomutlisateur" layoutX="753.0" layoutY="-77.0" onMouseClicked="#handleButton9Action" prefHeight="31.0" prefWidth="237.0" text="nasri.mohamedamin@esprit.tn">
+               <font>
+                  <Font name="Segoe UI Black" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btndeconnextion" layoutX="1115.0" layoutY="-62.0" mnemonicParsing="false" onMouseClicked="#handleButton6Action" text="Deconnextion" />
+            <Button layoutX="71.0" layoutY="780.0" mnemonicParsing="false" onAction="#Chat" style="-fx-background-color: transparent;" text="Chat" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></Button>
+            <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="4.0" layoutY="781.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                  <Image url="img/p.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="210.0" layoutY="86.0" prefHeight="78.0" prefWidth="936.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fx:id="I8" fitHeight="34.0" fitWidth="59.0" layoutX="761.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="img/search.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="440.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnChercherAction" style="-fx-background-color: transparent;" text="Rechercher" textFill="#00abab">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textfieldsearch" layoutX="555.0" layoutY="21.0" prefHeight="30.0" prefWidth="165.0" />
+            <Button fx:id="minimiseButton" layoutX="982.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="17.0" prefWidth="17.0" />
+            <TextField fx:id="idf" layoutX="131.0" layoutY="15.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: transparent;" />
+            <Button layoutX="904.0" layoutY="27.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Retour" textFill="#ee0983">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="19.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Google_Wallet_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="210.0" layoutY="141.0" prefHeight="426.0" prefWidth="367.0">
+         <children>
+            <Line endX="893.0" endY="3.0" layoutX="116.0" layoutY="32.0" startX="-102.5" startY="3.0" stroke="#ee0983" />
+         </children>
+      </Pane>
+      <Pane layoutX="580.0" layoutY="153.0" prefHeight="365.0" prefWidth="551.0">
+         <children>
+            <TableView fx:id="table" layoutX="-337.0" layoutY="77.0" prefHeight="366.0" prefWidth="890.0">
+              <columns>
+                <TableColumn fx:id="description" prefWidth="180.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Description" />
+                  <TableColumn fx:id="date_debut" prefWidth="152.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Date_Debut" />
+                  <TableColumn fx:id="date_fin" prefWidth="140.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Date_Fin" />
+                  <TableColumn fx:id="nbr_place" minWidth="9.0" prefWidth="79.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Nbr_Place" />
+                  <TableColumn fx:id="Categorie" prefWidth="171.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Categorie" />
+                  <TableColumn fx:id="coach" prefWidth="167.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Coach" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Button layoutX="623.0" layoutY="639.0" mnemonicParsing="false" onAction="#updateScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Modifier" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="637.0" mnemonicParsing="false" onAction="#deleteFormation" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Supprimer" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="1013.0" layoutY="639.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Actualiser" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="label1" layoutX="295.0" layoutY="104.0" prefHeight="64.0" prefWidth="312.0" text="Gestion De Formation" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="250.0" layoutY="636.0" mnemonicParsing="false" onAction="#InsertScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="231.0" fitWidth="437.0" layoutX="435.0" layoutY="739.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+                    <Image url="img/2Xgf.gif" />
+                </image>
+            </ImageView>
+      <ImageView fitHeight="218.0" fitWidth="210.0" layoutX="1026.0" layoutY="745.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+             <Image url="img/kk.gif" />
+         </image>
+      </ImageView>
+      <Button alignment="CENTER" layoutX="65.0" layoutY="714.0" mnemonicParsing="false" onAction="#btnCandidatAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT;" text="Candidats" textFill="#00abab">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="10.0" layoutY="707.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="img/08.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="811.0" layoutY="639.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Imprimer" textFill="#ee0983">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+          
+   </children>
+</AnchorPane>
