@@ -312,7 +312,7 @@ public class ConseilViewController implements Initializable {
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Confirmation Dialog");
             alert.setHeaderText("Confirmation");
-            alert.setContentText("Are you sure to delete ?");
+            alert.setContentText("Voulez-vous vraiment supprimer ce conseil ?");
             Optional<ButtonType> action = alert.showAndWait();
             if (action.get() == ButtonType.OK) {
                 Serviceconseil serviceconseil = new Serviceconseil();
