@@ -126,7 +126,7 @@ public class ListeCandidatsController implements Initializable {
     }
      @FXML
     public void passeScreenButtonPushed(ActionEvent event) throws IOException {
-        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/ExampleTableView.fxml"));
+        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/accueilcoach.fxml"));
         Scene tableviewScene = new Scene(tableviewParent);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(tableviewScene);

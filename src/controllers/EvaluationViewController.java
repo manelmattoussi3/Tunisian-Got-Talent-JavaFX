@@ -102,19 +102,19 @@ public class EvaluationViewController implements Initializable {
     private TextField avis;
     public DbConnection dc;
     @FXML
-    private TableColumn<Formation,String> txtnom;
+    private TableColumn<Participant,String> txtnom;
     @FXML
-    private TableColumn<Formation,String> txtprenom;
+    private TableColumn<Participant,String> txtprenom;
     @FXML
-    private TableColumn<Formation,String> txtmail;
+    private TableColumn<Participant,String> txtmail;
     @FXML
-    private TableColumn<Formation,String> txtproposition;
+    private TableColumn<Participant,String> txtproposition;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
            dc = new DbConnection();
         setMenuData() ;
         //setTableData();
-        loadScreenButton();
+       // loadScreenButton();
         loadData();
         loadFormation();
       /* rating.ratingProperty().addListener(new ChangeListener<Number>() {
@@ -170,6 +170,7 @@ public class EvaluationViewController implements Initializable {
         
         TreeItem<String> nodeItemB = new TreeItem<>(MENU_EXIT);
 
+        
         nodeItemA.setExpanded(true);
 
       /*  Node contactsNode = new ImageView(new Image(getClass().getResourceAsStream("img/010.png")));
@@ -427,7 +428,7 @@ public class EvaluationViewController implements Initializable {
         }
         
     }
-       public void loadScreenButton() {
+      /* public void loadScreenButton() {
             
         try {
            Connection conn = dc.Connect();
@@ -451,7 +452,7 @@ public class EvaluationViewController implements Initializable {
         table.setItems(null);
         table.setItems(data);
       
-    }
+    }*/
         @FXML
     public void btnenvoyerAction(ActionEvent event) throws IOException {
        
@@ -467,8 +468,12 @@ public class EvaluationViewController implements Initializable {
         alert.setHeaderText("Information");
         alert.setContentText("Conseil bien ajouté");
         alert.showAndWait();*/
-
-        ((Node) (event.getSource())).getScene().getWindow().hide();
+Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
+        alert1.setTitle("Envoyer proposition");
+        alert1.setHeaderText("Information");
+        alert1.setContentText("Votre proposition est  envoyé avec succée");
+        alert1.showAndWait();
+       /* ((Node) (event.getSource())).getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("/fxml/EvaluationView.fxml"));
         AnchorPane frame = loader.load();
@@ -479,7 +484,7 @@ public class EvaluationViewController implements Initializable {
 
         //AfficheConseilController.AfficheConseil();
         primaryStage.setTitle("Liste des propositions");
-        primaryStage.show();
+        primaryStage.show();*/
     }}
     private boolean validatefieldp() {
         if (inputnom.getText().isEmpty() |inputprenom.getText().isEmpty()| inputpseudo.getText().isEmpty()|inputproposition.getText().isEmpty()) {

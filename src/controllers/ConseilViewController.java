@@ -393,22 +393,7 @@ public class ConseilViewController implements Initializable {
     private void handleButton6Action(MouseEvent event) {
     }
 
-    @FXML
-    private void btnCandidatAction(ActionEvent event) throws IOException {
-        ((Node) (event.getSource())).getScene().getWindow().hide();
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/ListeCandidats.fxml"));
-        loader.load();
-        Parent p = loader.getRoot();
-        Stage primaryStage = new Stage();
-        primaryStage.setScene(new Scene(p));
-        ListeCandidatsController listeCadidatsController = loader.getController();
-        listeCadidatsController.AfficheCandidat();
-        //stage.getIcons().add(new Image("pidev/gui/img/icone.png"));
-        primaryStage.setTitle("Liste des Candidats");
-        primaryStage.show();
-    }
-
+   
     @FXML
     private void btnChercherAction(ActionEvent event) {
         if (!textfieldsearch.getText().isEmpty()) {
@@ -521,6 +506,21 @@ public class ConseilViewController implements Initializable {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(tableviewScene);
         window.show();
+    }
+   @FXML
+    private void btnCandidatAction(ActionEvent event) throws IOException {
+        ((Node) (event.getSource())).getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("/fxml/accueilcoach.fxml"));
+        loader.load();
+        Parent p = loader.getRoot();
+        Stage primaryStage = new Stage();
+        primaryStage.setScene(new Scene(p));
+        //ListeCandidatsController listeCadidatsController = loader.getController();
+        //.AfficheCandidat();
+        //stage.getIcons().add(new Image("pidev/gui/img/icone.png"));
+        primaryStage.setTitle("Liste des Candidats");
+        primaryStage.show();
     }
 
 }

@@ -389,13 +389,13 @@ public class ExampleTableViewController implements Initializable {
     private void btnCandidatAction(ActionEvent event) throws IOException {
         ((Node) (event.getSource())).getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/ListeCandidats.fxml"));
+        loader.setLocation(getClass().getResource("/fxml/accueilcoach.fxml"));
         loader.load();
         Parent p = loader.getRoot();
         Stage primaryStage = new Stage();
         primaryStage.setScene(new Scene(p));
-        ListeCandidatsController listeCadidatsController = loader.getController();
-        listeCadidatsController.AfficheCandidat();
+        //ListeCandidatsController listeCadidatsController = loader.getController();
+        //.AfficheCandidat();
         //stage.getIcons().add(new Image("pidev/gui/img/icone.png"));
         primaryStage.setTitle("Liste des Candidats");
         primaryStage.show();
@@ -695,5 +695,7 @@ public class ExampleTableViewController implements Initializable {
        e.printStackTrace();
        }
     }
+   
+    
 } 
 

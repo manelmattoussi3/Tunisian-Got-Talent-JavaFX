@@ -5,8 +5,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -66,45 +64,48 @@
                      </children></Pane>
                   <Pane fx:id="expertopane" prefHeight="757.0" prefWidth="599.0">
                      <children>
-                        <TableView fx:id="table" layoutX="16.0" layoutY="20.0" prefHeight="278.0" prefWidth="576.0" style="-fx-border-color: #26d1b9#26d1b9; -fx-background-color: #ddc9c9;">
-                           <columns>
-                              <TableColumn fx:id="txtnom" prefWidth="75.0" text="Nom" />
-                              <TableColumn fx:id="txtprenom" prefWidth="75.0" text="Prenom" />
-                              <TableColumn fx:id="txtmail" prefWidth="222.0" text="Email" />
-                              <TableColumn fx:id="txtproposition" prefWidth="202.0" text="Proposition" />
-                           </columns></TableView>
-                        <TextField fx:id="inputpseudo" layoutX="216.0" layoutY="439.0" prefHeight="25.0" prefWidth="215.0" promptText="Email" style="-fx-background-color: #ddc9c9;" />
-                        <TextField fx:id="inputnom" layoutX="211.0" layoutY="335.0" prefHeight="25.0" prefWidth="215.0" promptText="Nom" style="-fx-background-color: #ddc9c9;" />
-                        <TextField fx:id="inputprenom" layoutX="215.0" layoutY="389.0" prefHeight="25.0" prefWidth="215.0" promptText="Prenom" style="-fx-background-color: #ddc9c9;" />
-                        <Line endX="464.0" endY="-7.0" layoutX="129.0" layoutY="320.0" startX="-115.0" startY="-7.0" stroke="#26d1b9" />
-                        <Label layoutX="88.0" layoutY="333.0" text="Nom" textFill="#ee0983">
+                        <TextField fx:id="inputpseudo" layoutX="216.0" layoutY="357.0" prefHeight="40.0" prefWidth="282.0" promptText="Email" style="-fx-background-color: #ddc9c9;" />
+                        <TextField fx:id="inputnom" layoutX="211.0" layoutY="175.0" prefHeight="25.0" prefWidth="215.0" promptText="Nom" style="-fx-background-color: #ddc9c9;" />
+                        <TextField fx:id="inputprenom" layoutX="215.0" layoutY="271.0" prefHeight="25.0" prefWidth="215.0" promptText="Prenom" style="-fx-background-color: #ddc9c9;" />
+                        <Label layoutX="88.0" layoutY="166.0" text="Nom" textFill="#ee0983">
                            <font>
                               <Font name="System Bold Italic" size="20.0" />
                            </font>
                         </Label>
-                        <Label layoutX="83.0" layoutY="394.0" text="Prenom" textFill="#ee0983">
+                        <Label layoutX="83.0" layoutY="267.0" text="Prenom" textFill="#ee0983">
                            <font>
                               <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <Label layoutX="81.0" layoutY="438.0" text="Email" textFill="#ee0983">
+                        <Label layoutX="93.0" layoutY="366.0" text="Email" textFill="#ee0983">
                            <font>
                               <Font name="System Bold Italic" size="19.0" />
                            </font>
                         </Label>
-                        <Label layoutX="253.0" layoutY="487.0" prefHeight="27.0" prefWidth="129.0" text="Proposition" textFill="#ee0983">
+                        <Label layoutX="253.0" layoutY="438.0" prefHeight="27.0" prefWidth="129.0" text="Proposition" textFill="#ee0983">
                            <font>
                               <Font name="System Bold Italic" size="18.0" />
                            </font>
                         </Label>
-                        <TextArea fx:id="inputproposition" layoutX="100.0" layoutY="527.0" prefHeight="174.0" prefWidth="407.0" style="-fx-background-color: #26d1b9;" />
+                        <TextArea fx:id="inputproposition" layoutX="100.0" layoutY="485.0" prefHeight="174.0" prefWidth="407.0" style="-fx-background-color: #26d1b9;" />
                         <Button layoutX="559.0" layoutY="2.0" mnemonicParsing="false" onAction="#passeScreenButtonPushed" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;" text="Button" />
-                        <JFXButton layoutX="262.0" layoutY="712.0" onAction="#btnenvoyerAction" style="-fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="#ee0983">
+                        <JFXButton layoutX="262.0" layoutY="695.0" onAction="#btnenvoyerAction" style="-fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="#ee0983">
                            <font>
                               <Font name="System Bold Italic" size="15.0" />
                            </font>
                         </JFXButton>
                      </children></Pane>
+                  <Label layoutX="153.0" layoutY="51.0" prefHeight="40.0" prefWidth="323.0" text=" Votre Proposition" textFill="#ee0983">
+                     <font>
+                        <Font name="Britannic Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="73.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Google_Wallet_50px.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="137.0" layoutX="422.0" layoutY="113.0" startX="-334.0" stroke="#00abab" />
                </children></AnchorPane>
          </items>
       </SplitPane>
