@@ -70,6 +70,21 @@ public class AccueilcoachController implements Initializable {
         window.setScene(tableviewScene);
         window.show();
     }
-
+ @FXML
+    public void DashBordeval(ActionEvent event) throws IOException {
+        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/coacheval.fxml"));
+        Scene tableviewScene = new Scene(tableviewParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(tableviewScene);
+        window.show();
+    } 
+    @FXML
+    public void DashBordpart(ActionEvent event) throws IOException {
+        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/participationcandidat.fxml"));
+        Scene tableviewScene = new Scene(tableviewParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(tableviewScene);
+        window.show();
+    } 
     
 }

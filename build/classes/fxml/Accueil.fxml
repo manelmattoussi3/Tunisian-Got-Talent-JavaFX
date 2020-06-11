@@ -23,7 +23,7 @@
                   </Label>
                   <Button layoutX="44.0" layoutY="488.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Formation" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="24.0" />
                      </font>
                   </Button>
                   <ImageView fx:id="I1" fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
@@ -58,29 +58,29 @@
                   </ImageView>
                   <Button layoutX="61.0" layoutY="49.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Accueil" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="23.0" />
                      </font>
                   </Button>
                   <Button layoutX="45.0" layoutY="575.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Sponsoring" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="24.0" />
                      </font></Button>
                   <Button layoutX="47.0" layoutY="394.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Evenement" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="26.0" />
                      </font></Button>
                   <Button layoutX="44.0" layoutY="308.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Publication" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="24.0" />
                      </font></Button>
                   <Button layoutX="51.0" layoutY="134.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Actualités" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="22.0" />
                      </font>
                   </Button>
-                  <Button layoutX="74.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Quiz" textFill="WHITE">
+                  <Button layoutX="59.0" layoutY="225.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Quiz" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="23.0" />
+                        <Font name="Bernard MT Condensed" size="26.0" />
                      </font>
                   </Button>
                   <ImageView fx:id="I6" fitHeight="50.0" fitWidth="50.0" layoutX="6.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
@@ -94,7 +94,7 @@
                <children>
                   <Button layoutX="712.0" layoutY="16.0" mnemonicParsing="false" onAction="#quiter" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: Transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sign up" textFill="WHITE">
                      <font>
-                        <Font name="System Bold Italic" size="14.0" />
+                        <Font name="Bernard MT Condensed" size="17.0" />
                      </font>
                   </Button>
                </children>
@@ -123,12 +123,12 @@
                   <MediaView fx:id="mvt" fitHeight="200.0" fitWidth="600.0" layoutX="154.0" />
                   <Button fx:id="btnplay" layoutX="16.0" layoutY="186.0" mnemonicParsing="false" onAction="#onclickbtn_play" style="-fx-background-color: transparent;" text="Play" textFill="WHITE">
                      <font>
-                        <Font name="Batang" size="24.0" />
+                        <Font name="Bernard MT Condensed" size="25.0" />
                      </font>
                   </Button>
                   <Button fx:id="btnstop" layoutX="13.0" layoutY="237.0" mnemonicParsing="false" onAction="#onclickbtn_stop" style="-fx-background-color: transparent;" text="Stop" textFill="WHITE">
                      <font>
-                        <Font name="BatangChe" size="24.0" />
+                        <Font name="Bernard MT Condensed" size="27.0" />
                      </font>
                   </Button>
                   <Label fx:id="labe2" layoutX="207.0" layoutY="328.0" prefHeight="82.0" prefWidth="622.0" text="Tunisian Got Talent" textFill="#6f002a">
@@ -155,7 +155,7 @@
             </Button>
             <Button layoutX="785.0" layoutY="15.0" mnemonicParsing="false" onAction="#profilcandidat" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: Transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sign in" textFill="WHITE">
                <font>
-                  <Font name="System Bold Italic" size="14.0" />
+                  <Font name="Bernard MT Condensed" size="17.0" />
                </font>
             </Button>
          </children>

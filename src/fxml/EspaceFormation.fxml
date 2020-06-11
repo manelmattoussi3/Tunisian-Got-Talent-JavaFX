@@ -16,47 +16,47 @@
    <children>
       <AnchorPane layoutX="-9.0" layoutY="321.0" prefHeight="659.0" prefWidth="1010.0" style="-fx-background-color: BLACK;">
          <children>
-            <Line endX="888.0" layoutX="121.0" layoutY="12.0" startX="-121.0" stroke="#ee0983" />
-            <Button layoutX="252.0" layoutY="29.0" mnemonicParsing="false" onAction="#pdfpdfaction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Des Lecons Musique" textFill="#ee0983">
+            <Line endX="888.0" layoutX="121.0" layoutY="12.0" startX="-121.0" stroke="WHITE" />
+            <Button layoutX="252.0" layoutY="29.0" mnemonicParsing="false" onAction="#pdfpdfaction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Des Lecons Musique" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="597.0" layoutY="30.0" mnemonicParsing="false" onAction="#Voirplus" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Voir Plus" textFill="#ee0983">
+            <Button layoutX="597.0" layoutY="30.0" mnemonicParsing="false" onAction="#Voirplus" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Voir Plus" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="836.0" layoutY="589.0" text="Tunisian Got Talent" textFill="#00abab">
+            <Label layoutX="836.0" layoutY="589.0" text="Tunisian Got Talent" textFill="#6f002a">
                <font>
-                  <Font name="System Bold Italic" size="15.0" />
+                  <Font name="Bernard MT Condensed" size="18.0" />
                </font>
             </Label>
             <MediaView fx:id="mediaview" fitHeight="300.0" fitWidth="500.0" layoutX="243.0" layoutY="92.0" />
-            <Button layoutX="263.0" layoutY="448.0" mnemonicParsing="false" onAction="#onclickbtn_play" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Play" textFill="#ee0983">
+            <Button layoutX="263.0" layoutY="448.0" mnemonicParsing="false" onAction="#onclickbtn_play" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Play" textFill="#6f002a">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="440.0" layoutY="446.0" mnemonicParsing="false" onAction="#onclickbtn_stop" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Stop" textFill="#ee0983">
+            <Button layoutX="440.0" layoutY="446.0" mnemonicParsing="false" onAction="#onclickbtn_stop" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Stop" textFill="#6f002a">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="345.0" layoutY="445.0" mnemonicParsing="false" onAction="#onclickbtn_pause" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Pause" textFill="#ee0983">
+            <Button layoutX="345.0" layoutY="445.0" mnemonicParsing="false" onAction="#onclickbtn_pause" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Pause" textFill="#6f002a">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
             <Slider fx:id="slider" layoutX="527.0" layoutY="460.0" />
            
-            <Label layoutX="84.0" layoutY="525.0" text="Veuillez donner une note à la formation" textFill="#00abab">
+            <Label layoutX="84.0" layoutY="525.0" text="Veuillez donner un note à la formation" textFill="#00abab">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <Line endX="389.5" endY="-8.0" layoutX="141.0" layoutY="571.0" startX="-101.5" startY="-8.0" stroke="#ee0983" />
-            <Line endX="147.5" endY="17.0" layoutX="836.0" layoutY="544.0" startX="-91.5" startY="17.0" stroke="#ee0983" />
+            <Line endX="389.5" endY="-8.0" layoutX="141.0" layoutY="571.0" startX="-101.5" startY="-8.0" stroke="WHITE" />
+            <Line endX="147.5" endY="17.0" layoutX="836.0" layoutY="544.0" startX="-91.5" startY="17.0" stroke="WHITE" />
             <Rating fx:id="rating" layoutX="544.0" layoutY="545.0" onMouseClicked="#Evaluation" />
             <Label fx:id="msg" layoutX="564.0" layoutY="602.0" prefHeight="32.0" prefWidth="140.0" textFill="#00abab">
                <font>
@@ -81,17 +81,17 @@
       </ImageView>
       <Pane layoutX="-3.0" prefHeight="85.0" prefWidth="1003.0" style="-fx-background-color: black;">
          <children>
-            <Button layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="#ee0983">
+            <Button layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Label layoutX="319.0" layoutY="23.0" prefHeight="36.0" prefWidth="382.0" text="Formation Musique" textFill="#ee0983">
+            <Label layoutX="319.0" layoutY="23.0" prefHeight="36.0" prefWidth="382.0" text="Formation Musique" textFill="#6f002a">
                <font>
-                  <Font name="Britannic Bold" size="35.0" />
+                  <Font name="Bernard MT Condensed" size="38.0" />
                </font>
             </Label>
-            <Button layoutX="939.0" layoutY="25.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sortie" textFill="#ee0983">
+            <Button layoutX="939.0" layoutY="25.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sortie" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>

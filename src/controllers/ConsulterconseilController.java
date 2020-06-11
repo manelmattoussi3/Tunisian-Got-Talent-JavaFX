@@ -41,6 +41,8 @@ public Conseil conseil;
     @FXML
     private ImageView imageview;
     private DbConnection dc;
+    @FXML
+    private Label txtDescription1;
     /**
      * Initializes the controller class.
      */
@@ -88,6 +90,7 @@ public Conseil conseil;
         Image image = new Image(file.toURI().toString());
         imageview.setImage(image);
         txtDescription.setText(conseil.getCategoricons()); 
+        txtDescription1.setText(conseil.getDescriptioncons()); 
        // final String destinationUrl = "src/Photo/default.jpg"; 
        //final Image image = new Image(destinationUrl);
         conseilService.getConseil(conseil.getIdcons());

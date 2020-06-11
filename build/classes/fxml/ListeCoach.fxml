@@ -18,18 +18,18 @@
          <children>
             <Pane layoutX="-12.0" layoutY="-12.0" prefHeight="217.0" prefWidth="978.0" style="-fx-background-color: black;">
                <children>
-                  <Button fx:id="btnExit" layoutX="906.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnExitAction" prefHeight="27.0" prefWidth="43.0" style="-fx-background-color: transparent; -fx-border-color: #ee0983; -fx-border-radius: 10px;" text="Exit" textFill="#26d1b9">
+                  <Button fx:id="btnExit" layoutX="906.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnExitAction" prefHeight="27.0" prefWidth="69.0" style="-fx-background-color: transparent; -fx-border-color: #6f002a; -fx-border-radius: 10px;" text="Sortie" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Label fx:id="lbl" layoutX="364.0" layoutY="17.0" prefHeight="60.0" prefWidth="310.0" text="Liste des Coachs" textFill="#26d1b9">
+                  <Label fx:id="lbl" layoutX="364.0" layoutY="17.0" prefHeight="60.0" prefWidth="310.0" text="Liste des Coachs" textFill="#6f002a">
                      <font>
-                        <Font name="System Bold Italic" size="27.0" />
+                        <Font name="Bernard MT Condensed" size="44.0" />
                      </font>
                   </Label>
-                  <Line endX="991.0" endY="184.0" layoutX="-13.0" layoutY="-65.0" startX="13.0" startY="184.0" stroke="#ee0983" />
-                  <Button fx:id="btnBack1" layoutX="31.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackAction" style="-fx-background-color: transparent; -fx-border-color: #ee0983; -fx-border-radius: 10px;" text="Back " textFill="#26d1b9">
+                  <Line endX="991.0" endY="184.0" layoutX="-13.0" layoutY="-65.0" startX="13.0" startY="184.0" stroke="WHITE" />
+                  <Button fx:id="btnBack1" layoutX="31.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackAction" style="-fx-background-color: transparent; -fx-border-color: #6f002a; -fx-border-radius: 10px;" text="Retour" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -41,21 +41,21 @@
                   </ImageView>
                </children>
             </Pane>
-            <Button fx:id="btnChercher" layoutX="156.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnChercherAction" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: #ee0983; -fx-border-radius: 10px;" text="Rechercher" textFill="#11f5f5">
+            <Button fx:id="btnChercher" layoutX="156.0" layoutY="205.0" mnemonicParsing="false" onAction="#btnChercherAction" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: transparent; -fx-border-color: #6f002a; -fx-border-radius: 10px;" text="Rechercher" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font>
             </Button>
             <TextField fx:id="txtChercher" layoutX="286.0" layoutY="205.0" prefHeight="31.0" prefWidth="149.0" />
-            <Button fx:id="btnRéinitialiser" layoutX="659.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnRéinitialiserAction" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-color: #ee0983; -fx-border-radius: 10px;" text="Actualiser" textFill="#11f5f5">
+            <Button fx:id="btnRéinitialiser" layoutX="659.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnRéinitialiserAction" prefHeight="40.0" prefWidth="85.0" style="-fx-background-color: transparent; -fx-border-color: #6f002a; -fx-border-radius: 10px;" text="Actualiser" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Line endX="835.0" endY="19.0" layoutX="132.0" layoutY="604.0" startX="-132.0" startY="19.0" stroke="#ee0983" />
-            <Label fx:id="labelt" layoutX="801.0" layoutY="637.0" prefHeight="20.0" prefWidth="166.0" text="Tunisian Got Talent" textFill="#ee0983">
+            <Line endX="835.0" endY="19.0" layoutX="132.0" layoutY="604.0" startX="-132.0" startY="19.0" stroke="WHITE" />
+            <Label fx:id="labelt" layoutX="801.0" layoutY="637.0" prefHeight="20.0" prefWidth="166.0" text="Tunisian Got Talent" textFill="#6f002a">
                <font>
-                  <Font name="System Bold Italic" size="16.0" />
+                  <Font name="Bernard MT Condensed" size="15.0" />
                </font>
             </Label>
             <TableView fx:id="table" layoutX="113.0" layoutY="315.0" prefHeight="200.0" prefWidth="658.0">

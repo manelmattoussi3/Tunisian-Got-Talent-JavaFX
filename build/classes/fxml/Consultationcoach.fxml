@@ -10,10 +10,10 @@
    <children>
       <TableView fx:id="table" layoutX="13.0" layoutY="65.0" prefHeight="278.0" prefWidth="576.0" style="-fx-border-color: #26d1b9#26d1b9; -fx-background-color: #ddc9c9;">
          <columns>
-            <TableColumn fx:id="txtnom" prefWidth="75.0" text="Nom" />
-            <TableColumn fx:id="txtprenom" prefWidth="75.0" text="Prenom" />
-            <TableColumn fx:id="txtmail" prefWidth="222.0" text="Email" />
-            <TableColumn fx:id="txtproposition" prefWidth="202.0" text="Proposition" />
+            <TableColumn fx:id="txtnom" prefWidth="75.0" style="-fx-border-color: #ddc9c9; -fx-background-color: #26d1b9;" text="Nom" />
+            <TableColumn fx:id="txtprenom" prefWidth="75.0" style="-fx-border-color: #ddc9c9; -fx-background-color: #26d1b9;" text="Prenom" />
+            <TableColumn fx:id="txtmail" prefWidth="222.0" style="-fx-border-color: #ddc9c9; -fx-background-color: #26d1b9;" text="Email" />
+            <TableColumn fx:id="txtproposition" prefWidth="202.0" style="-fx-border-color: #26d1b9; -fx-background-color: #ddc9c9;" text="Proposition" />
          </columns>
       </TableView>
       <JFXButton layoutX="30.0" layoutY="14.0" onAction="#btnCandidatAction" text="Retour" textFill="#6f002a">

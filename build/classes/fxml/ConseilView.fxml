@@ -10,6 +10,8 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
@@ -42,12 +44,12 @@
             </ImageView>
             <Button alignment="CENTER" layoutX="56.0" layoutY="34.0" mnemonicParsing="false" onAction="#modifeScreenButtonPushed" prefHeight="50.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Accueil" textFill="#00abab">
                <font>
-                  <Font name="System Bold Italic" size="23.0" />
+                  <Font name="Bernard MT Condensed" size="24.0" />
                </font>
             </Button>
             <Button alignment="CENTER" layoutX="52.0" layoutY="224.0" mnemonicParsing="false" onAction="#passeScreenButtonPushed" prefHeight="50.0" prefWidth="161.0" style="-fx-background-color: transparent;" text="Formation" textFill="#00abab">
                <font>
-                  <Font name="System Bold Italic" size="23.0" />
+                  <Font name="Bernard MT Condensed" size="26.0" />
                </font>
             </Button>
          </children>
@@ -66,7 +68,7 @@
             </Button>
             <TextField fx:id="textfieldsearch" layoutX="524.0" layoutY="25.0" prefHeight="30.0" prefWidth="286.0" />
             <Button fx:id="minimiseButton" layoutX="1182.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonAction" />
-            <Button layoutX="1090.0" layoutY="24.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Retour" textFill="#ee0983">
+            <Button layoutX="1090.0" layoutY="24.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Retour" textFill="#6f002a">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
@@ -76,7 +78,7 @@
       <Pane layoutX="212.0" layoutY="137.0" prefHeight="802.0" prefWidth="1224.0" style="-fx-background-color: black;">
          <children>
             <TextField fx:id="textfieldimage" layoutX="607.0" layoutY="637.0" prefHeight="34.0" prefWidth="222.0" style="-fx-background-color: transparent;" />
-            <Button layoutX="811.0" layoutY="705.0" mnemonicParsing="false" onAction="#AjouterConseil" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="#ee0983">
+            <Button layoutX="811.0" layoutY="712.0" mnemonicParsing="false" onAction="#AjouterConseil" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
@@ -95,23 +97,31 @@
                   <javafx.scene.image.Image url="img/7878.gif" />
                </image>
             </ImageView>
-            <Line endX="678.0" endY="-8.0" layoutX="334.0" startX="-62.0" startY="-8.0" stroke="#ee0983" />
-            <Button layoutX="248.0" layoutY="713.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text=" Actualiser" textFill="#ee0983">
+            <Line endX="678.0" endY="-8.0" layoutX="334.0" startX="-62.0" startY="-8.0" stroke="WHITE" />
+            <Button layoutX="248.0" layoutY="713.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text=" Actualiser" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="517.0" layoutY="706.0" mnemonicParsing="false" onAction="#deleteConseil" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text=" Supprimer" textFill="#ee0983">
+            <Button layoutX="517.0" layoutY="713.0" mnemonicParsing="false" onAction="#deleteConseil" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text=" Supprimer" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Label fx:id="label1" layoutX="373.0" prefHeight="64.0" prefWidth="375.0" text="Conseil Vestimentaire" textFill="#ee0983">
+            <Label fx:id="label1" layoutX="373.0" prefHeight="64.0" prefWidth="375.0" text="Conseil Vestimentaire" textFill="#6f002a">
                <font>
-                  <Font name="Britannic Bold" size="38.0" />
+                  <Font name="Bernard MT Condensed" size="37.0" />
                </font>
             </Label>
-            <Line endX="222.0" endY="-12.0" layoutX="556.0" layoutY="76.0" startX="-203.0" startY="-12.0" stroke="#ee0983" />
+            <Line endX="222.0" endY="-12.0" layoutX="556.0" layoutY="76.0" startX="-203.0" startY="-12.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#f5f4df" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke></Line>
             <Pane layoutX="11.0" layoutY="73.0" prefHeight="223.0" prefWidth="1203.0" style="-fx-background-color: white;">
                <children>
                   <ImageView fitHeight="223.0" fitWidth="214.0" layoutX="294.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
@@ -159,9 +169,9 @@
          </font>
       </Label>
       <Button fx:id="btndeconnextion" layoutX="1308.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#handleButton6Action" text="Deconnextion" />
-      <Button alignment="CENTER" layoutX="63.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnCandidatAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT;" text="Candidats" textFill="#00abab">
+      <Button alignment="CENTER" layoutX="63.0" layoutY="654.0" mnemonicParsing="false" onAction="#btnCandidatAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT;" text="Candidat" textFill="#00abab">
          <font>
-            <Font name="System Bold Italic" size="21.0" />
+            <Font name="Bernard MT Condensed" size="23.0" />
          </font>
       </Button>
       <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="6.0" layoutY="651.0" pickOnBounds="true" preserveRatio="true">
@@ -172,7 +182,7 @@
       <Label fx:id="reclamation" layoutX="459.0" layoutY="17.0" onMouseClicked="#handleButton10Action" text="envoyer une reclamation" />
       <Button layoutX="81.0" layoutY="829.0" mnemonicParsing="false" onAction="#Chat" style="-fx-background-color: transparent;" text="Chat" textFill="#00abab">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="Bernard MT Condensed" size="26.0" />
          </font>
       </Button>
       <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="2.0" layoutY="823.0" pickOnBounds="true" preserveRatio="true">

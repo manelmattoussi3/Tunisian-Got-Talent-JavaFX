@@ -26,11 +26,11 @@
             </AnchorPane>
             <AnchorPane prefHeight="743.0" prefWidth="582.0" style="-fx-background-color: black;">
                <children>
-                  <Pane fx:id="contactpane" prefHeight="731.0" prefWidth="599.0" visible="false">
+                  <Pane fx:id="contactpane" prefHeight="731.0" prefWidth="599.0">
                      <children>
-                        <Label layoutX="143.0" layoutY="41.0" prefHeight="40.0" prefWidth="323.0" text="Evaluer Votre Formation" textFill="#ee0983">
+                        <Label layoutX="143.0" layoutY="41.0" prefHeight="40.0" prefWidth="323.0" text="Evaluer Votre Formation" textFill="#6f002a">
                            <font>
-                              <Font name="Britannic Bold" size="28.0" />
+                              <Font name="Bernard MT Condensed" size="34.0" />
                            </font>
                         </Label>
                         <Line endX="137.0" layoutX="412.0" layoutY="103.0" startX="-334.0" stroke="#00abab" />
@@ -51,7 +51,7 @@
                               <Font name="System Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Button layoutX="266.0" layoutY="611.0" mnemonicParsing="false" onAction="#btnAjouterAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="#ee0983">
+                        <Button layoutX="266.0" layoutY="611.0" mnemonicParsing="false" onAction="#btnAjouterAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="#6f002a">
                            <font>
                               <Font name="System Bold Italic" size="16.0" />
                            </font></Button>
@@ -62,50 +62,49 @@
                            </image>
                         </ImageView>
                      </children></Pane>
-                  <Pane fx:id="expertopane" prefHeight="757.0" prefWidth="599.0">
+                  <Pane fx:id="expertopane" prefHeight="757.0" prefWidth="599.0" visible="false">
                      <children>
                         <TextField fx:id="inputpseudo" layoutX="216.0" layoutY="357.0" prefHeight="40.0" prefWidth="282.0" promptText="Email" style="-fx-background-color: #ddc9c9;" />
                         <TextField fx:id="inputnom" layoutX="211.0" layoutY="175.0" prefHeight="25.0" prefWidth="215.0" promptText="Nom" style="-fx-background-color: #ddc9c9;" />
                         <TextField fx:id="inputprenom" layoutX="215.0" layoutY="271.0" prefHeight="25.0" prefWidth="215.0" promptText="Prenom" style="-fx-background-color: #ddc9c9;" />
-                        <Label layoutX="88.0" layoutY="166.0" text="Nom" textFill="#ee0983">
+                        <Label layoutX="88.0" layoutY="166.0" text="Nom" textFill="#6f002a">
                            <font>
-                              <Font name="System Bold Italic" size="20.0" />
+                              <Font name="Bernard MT Condensed" size="21.0" />
                            </font>
                         </Label>
-                        <Label layoutX="83.0" layoutY="267.0" text="Prenom" textFill="#ee0983">
+                        <Label layoutX="83.0" layoutY="267.0" text="Prenom" textFill="#6f002a">
                            <font>
-                              <Font name="System Bold Italic" size="18.0" />
+                              <Font name="Bernard MT Condensed" size="21.0" />
                            </font>
                         </Label>
-                        <Label layoutX="93.0" layoutY="366.0" text="Email" textFill="#ee0983">
+                        <Label layoutX="93.0" layoutY="366.0" text="Email" textFill="#6f002a">
                            <font>
-                              <Font name="System Bold Italic" size="19.0" />
+                              <Font name="Bernard MT Condensed" size="22.0" />
                            </font>
                         </Label>
-                        <Label layoutX="253.0" layoutY="438.0" prefHeight="27.0" prefWidth="129.0" text="Proposition" textFill="#ee0983">
+                        <Label layoutX="235.0" layoutY="438.0" prefHeight="38.0" prefWidth="169.0" text="Proposition" textFill="#6f002a">
                            <font>
-                              <Font name="System Bold Italic" size="18.0" />
+                              <Font name="Bernard MT Condensed" size="30.0" />
                            </font>
                         </Label>
                         <TextArea fx:id="inputproposition" layoutX="100.0" layoutY="485.0" prefHeight="174.0" prefWidth="407.0" style="-fx-background-color: #26d1b9;" />
                         <Button layoutX="559.0" layoutY="2.0" mnemonicParsing="false" onAction="#passeScreenButtonPushed" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent;" text="Button" />
-                        <JFXButton layoutX="262.0" layoutY="695.0" onAction="#btnenvoyerAction" style="-fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="#ee0983">
+                        <JFXButton layoutX="262.0" layoutY="695.0" onAction="#btnenvoyerAction" style="-fx-border-color: #00abab; -fx-border-radius: 10px;" text="Envoyer" textFill="WHITE">
                            <font>
                               <Font name="System Bold Italic" size="15.0" />
                            </font>
                         </JFXButton>
+                        <Label layoutX="157.0" layoutY="38.0" prefHeight="40.0" prefWidth="323.0" text=" Votre Proposition" textFill="#6f002a">
+                           <font>
+                              <Font name="Bernard MT Condensed" size="34.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="83.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Google_Wallet_50px.png" />
+                           </image>
+                        </ImageView>
                      </children></Pane>
-                  <Label layoutX="153.0" layoutY="51.0" prefHeight="40.0" prefWidth="323.0" text=" Votre Proposition" textFill="#ee0983">
-                     <font>
-                        <Font name="Britannic Bold" size="28.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="73.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/icons8_Google_Wallet_50px.png" />
-                     </image>
-                  </ImageView>
-                  <Line endX="137.0" layoutX="422.0" layoutY="113.0" startX="-334.0" stroke="#00abab" />
                </children></AnchorPane>
          </items>
       </SplitPane>

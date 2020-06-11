@@ -13,16 +13,16 @@
 
 <AnchorPane id="AnchorPane" fx:id="anchorpane" prefHeight="763.0" prefWidth="1014.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EspaceConseilController">
    <children>
-      <Line endX="927.2928466796875" endY="22.0" layoutX="142.0" layoutY="674.0" startX="-142.0" startY="28.0" stroke="#ee0983" />
+      <Line endX="927.2928466796875" endY="22.0" layoutX="142.0" layoutY="674.0" startX="-142.0" startY="28.0" stroke="WHITE" />
       <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="101.0" prefWidth="1071.0" style="-fx-background-color: black;">
          <children>
-            <Label layoutX="311.0" layoutY="32.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#ee0983">
+            <Label layoutX="311.0" layoutY="32.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#6f002a">
                <font>
-                  <Font name="Arial Bold Italic" size="36.0" />
+                  <Font name="Bernard MT Condensed" size="43.0" />
                </font>
             </Label>
-            <Button layoutX="3.0" layoutY="30.0" mnemonicParsing="false" onAction="#DashBord" prefHeight="32.0" prefWidth="54.0" style="-fx-border-color: #00abab; -fx-background-color: transparent; -fx-border-radius: 10px;" text="Retour" textFill="#ee0983" />
-            <Button layoutX="1017.0" layoutY="27.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sortie" textFill="#ee0983">
+            <Button layoutX="3.0" layoutY="30.0" mnemonicParsing="false" onAction="#DashBord" prefHeight="32.0" prefWidth="54.0" style="-fx-border-color: #00abab; -fx-background-color: transparent; -fx-border-radius: 10px;" text="Retour" textFill="WHITE" />
+            <Button layoutX="1017.0" layoutY="27.0" mnemonicParsing="false" onAction="#quiter" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Sortie" textFill="WHITE">
                <font>
                   <Font size="14.0" />
                </font>
@@ -34,9 +34,9 @@
             </ImageView>
          </children>
       </Pane>
-      <Label layoutX="914.0" layoutY="714.0" text="Tunisian Got Talent" textFill="#00abab">
+      <Label layoutX="914.0" layoutY="714.0" text="Tunisian Got Talent" textFill="#6f002a">
          <font>
-            <Font name="System Bold Italic" size="15.0" />
+            <Font name="Bernard MT Condensed" size="17.0" />
          </font>
       </Label>
       <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true" />
@@ -59,15 +59,15 @@
             <Image url="/img/music.gif" />
          </image>
       </ImageView>
-      <Line endX="927.2928466796875" endY="22.0" layoutX="152.0" layoutY="260.0" startX="-152.0" startY="22.0" stroke="#ee0983" />
-      <Button layoutX="25.0" layoutY="296.0" mnemonicParsing="false" onAction="#Chat" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Comminuquer avec votre Coach" textFill="#ee0983">
+      <Line endX="927.2928466796875" endY="22.0" layoutX="152.0" layoutY="260.0" startX="-152.0" startY="22.0" stroke="WHITE" />
+      <Button layoutX="25.0" layoutY="296.0" mnemonicParsing="false" onAction="#Chat" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Comminuquer avec votre Coach" textFill="#6f002a">
          <font>
-            <Font name="System Bold Italic" size="22.0" />
+            <Font name="Bernard MT Condensed" size="25.0" />
          </font>
       </Button>
-      <Button fx:id="btnConsulter" layoutX="535.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnConsulterAction" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Consulter à un Conseil" textFill="#ee0983">
+      <Button fx:id="btnConsulter" layoutX="535.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnConsulterAction" prefHeight="32.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Consulter à un Conseil" textFill="#6f002a">
          <font>
-            <Font name="System Bold Italic" size="22.0" />
+            <Font name="Bernard MT Condensed" size="25.0" />
          </font>
       </Button>
       <TableView fx:id="tableconseil" layoutX="118.0" layoutY="402.0" prefHeight="276.0" prefWidth="929.0" style="-fx-border-color: #ee0983;">

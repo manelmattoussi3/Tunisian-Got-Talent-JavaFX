@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Autre.jar" size="111907801" download="eager" />
+    <jar href="Autre.jar" size="113815085" download="eager" />
     <jar href="lib\PDFjet.jar" size="265476" download="eager" />
     <jar href="lib\commons-codec-1.9.jar" size="263965" download="eager" />
     <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />

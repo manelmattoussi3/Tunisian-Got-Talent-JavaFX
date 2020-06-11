@@ -42,12 +42,12 @@
                         <Font name="Bernard MT Condensed" size="31.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton layoutX="41.0" layoutY="389.0" text="Evaluation" textFill="#6f002a">
+                  <JFXButton layoutX="41.0" layoutY="389.0" onAction="#DashBordeval" text="Evaluation" textFill="#6f002a">
                      <font>
                         <Font name="Bernard MT Condensed" size="31.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton layoutX="44.0" layoutY="511.0" text="Participation" textFill="#6f002a">
+                  <JFXButton layoutX="44.0" layoutY="511.0" onAction="#DashBordpart" text="Participation" textFill="#6f002a">
                      <font>
                         <Font name="Bernard MT Condensed" size="31.0" />
                      </font>

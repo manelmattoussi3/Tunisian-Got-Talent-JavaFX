@@ -7,16 +7,27 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="715.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConsulterconseilController">
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="715.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConsulterconseilController">
    <children>
       <Label fx:id="txtDescription" layoutX="332.0" layoutY="410.0" style="-fx-font-size: 22; -fx-text-fill: #ffffff;" text="Label" />
       <ImageView fx:id="imageview" fitHeight="281.0" fitWidth="504.0" layoutX="119.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnBackAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="#ee0983" />
-      <Label layoutX="149.0" layoutY="18.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#ee0983">
+      <Button layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnBackAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="#6f002a" />
+      <Label layoutX="149.0" layoutY="18.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#6f002a">
          <font>
-            <Font name="Arial Bold Italic" size="36.0" />
+            <Font name="Bernard MT Condensed" size="36.0" />
          </font>
       </Label>
       <Line endX="404.0" endY="-5.0" layoutX="231.0" layoutY="77.0" startX="-141.0" startY="-5.0" stroke="#00abab" />
+      <Label layoutX="62.0" layoutY="410.0" text="Description:" textFill="#6f002a">
+         <font>
+            <Font name="Bernard MT Condensed" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="470.0" text="Catégorie:" textFill="#6f002a">
+         <font>
+            <Font name="Bernard MT Condensed" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtDescription1" layoutX="336.0" layoutY="462.0" style="-fx-font-size: 22; -fx-text-fill: #ffffff;" text="Label" />
    </children>
 </AnchorPane>

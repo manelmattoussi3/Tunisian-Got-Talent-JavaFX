@@ -10,10 +10,13 @@ package models;
  * @author DevelopAndroid
  */
 public class Rate {
+
     private int id;
-     private int candidat_id;
-      private int formation_id;
-      private String avis;
+    private int candidat_id;
+    private int formation_id;
+    private String avis;
+    private String nom_candidat;
+    private String formation;
 
     public Rate() {
     }
@@ -25,10 +28,33 @@ public class Rate {
         this.avis = avis;
     }
 
-    public Rate(int id, int candidat_id, int formation_id) {
+    public Rate(int id,  String nom_candidat, String formation,String avis) {
         this.id = id;
-        this.candidat_id = candidat_id;
-        this.formation_id = formation_id;
+        this.avis = avis;
+        this.nom_candidat = nom_candidat;
+        this.formation = formation;
+    }
+
+    public Rate(int id, String nom_candidat, String formation) {
+        this.id = id;
+        this.nom_candidat = nom_candidat;
+        this.formation = formation;
+    }
+
+    public String getNom_candidat() {
+        return nom_candidat;
+    }
+
+    public void setNom_candidat(String nom_candidat) {
+        this.nom_candidat = nom_candidat;
+    }
+
+    public String getFormation() {
+        return formation;
+    }
+
+    public void setFormation(String formation) {
+        this.formation = formation;
     }
 
     public int getId() {
@@ -67,5 +93,5 @@ public class Rate {
     public String toString() {
         return "Rating{" + "id=" + id + ", candidat_id=" + candidat_id + ", formation_id=" + formation_id + ", avis=" + avis + '}';
     }
-    
+
 }

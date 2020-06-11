@@ -42,12 +42,12 @@
             </ImageView>
             <Button layoutX="50.0" layoutY="53.0" mnemonicParsing="false" onAction="#modifeScreenButtonPushed" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Accueil" textFill="#00abab">
                <font>
-                  <Font name="System Bold Italic" size="23.0" />
+                  <Font name="Bernard MT Condensed" size="24.0" />
                </font>
             </Button>
             <Button layoutX="61.0" layoutY="431.0" mnemonicParsing="false" onAction="#passeScreenButtonPushed" prefHeight="50.0" prefWidth="128.0" style="-fx-background-color: transparent;" text="Conseil" textFill="#00abab">
                <font>
-                  <Font name="System Bold Italic" size="23.0" />
+                  <Font name="Bernard MT Condensed" size="24.0" />
                </font>
             </Button>
             <Pane layoutY="-86.0" prefHeight="78.0" prefWidth="1243.0" style="-fx-background-color: white;" />
@@ -69,7 +69,7 @@
             <Button fx:id="btndeconnextion" layoutX="1115.0" layoutY="-62.0" mnemonicParsing="false" onMouseClicked="#handleButton6Action" text="Deconnextion" />
             <Button layoutX="71.0" layoutY="780.0" mnemonicParsing="false" onAction="#Chat" style="-fx-background-color: transparent;" text="Chat" textFill="#00abab">
                <font>
-                  <Font name="System Bold Italic" size="24.0" />
+                  <Font name="Bernard MT Condensed" size="26.0" />
                </font></Button>
             <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="4.0" layoutY="781.0" pickOnBounds="true" preserveRatio="true">
                 <image>
@@ -93,7 +93,7 @@
             <TextField fx:id="textfieldsearch" layoutX="555.0" layoutY="21.0" prefHeight="30.0" prefWidth="165.0" />
             <Button fx:id="minimiseButton" layoutX="982.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="17.0" prefWidth="17.0" />
             <TextField fx:id="idf" layoutX="131.0" layoutY="15.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: transparent;" />
-            <Button layoutX="904.0" layoutY="27.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Retour" textFill="#ee0983">
+            <Button layoutX="904.0" layoutY="27.0" mnemonicParsing="false" onAction="#DashBord" style="-fx-background-color: transparent;" text="Retour" textFill="#6f002a">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
@@ -124,27 +124,27 @@
             </TableView>
          </children>
       </Pane>
-      <Button layoutX="623.0" layoutY="639.0" mnemonicParsing="false" onAction="#updateScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Modifier" textFill="#ee0983">
+      <Button layoutX="623.0" layoutY="639.0" mnemonicParsing="false" onAction="#updateScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Modifier" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font>
       </Button>
-      <Button layoutX="434.0" layoutY="637.0" mnemonicParsing="false" onAction="#deleteFormation" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Supprimer" textFill="#ee0983">
+      <Button layoutX="434.0" layoutY="637.0" mnemonicParsing="false" onAction="#deleteFormation" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Supprimer" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="1013.0" layoutY="639.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Actualiser" textFill="#ee0983">
+      <Button layoutX="1013.0" layoutY="639.0" mnemonicParsing="false" onAction="#btnActualiserAction" prefHeight="64.0" prefWidth="128.0" style="-fx-border-color: #00abab; -fx-border-radius: 10px; -fx-background-color: transparent;" text="Actualiser" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Button>
-      <Label fx:id="label1" layoutX="295.0" layoutY="104.0" prefHeight="64.0" prefWidth="312.0" text="Gestion De Formation" textFill="#ee0983">
+      <Label fx:id="label1" layoutX="295.0" layoutY="104.0" prefHeight="64.0" prefWidth="312.0" text="Gestion De Formation" textFill="#6f002a">
          <font>
-            <Font name="System Bold Italic" size="28.0" />
+            <Font name="Bernard MT Condensed" size="32.0" />
          </font>
       </Label>
-      <Button layoutX="250.0" layoutY="636.0" mnemonicParsing="false" onAction="#InsertScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="#ee0983">
+      <Button layoutX="250.0" layoutY="636.0" mnemonicParsing="false" onAction="#InsertScreenButtonPushed" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Ajouter" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font>
@@ -161,7 +161,7 @@
       </ImageView>
       <Button alignment="CENTER" layoutX="65.0" layoutY="714.0" mnemonicParsing="false" onAction="#btnCandidatAction" prefHeight="45.0" prefWidth="132.0" style="-fx-background-color: TRANSPARENT;" text="Candidats" textFill="#00abab">
          <font>
-            <Font name="System Bold Italic" size="21.0" />
+            <Font name="Bernard MT Condensed" size="22.0" />
          </font>
       </Button>
       <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="10.0" layoutY="707.0" pickOnBounds="true" preserveRatio="true">
@@ -169,7 +169,7 @@
             <Image url="img/08.png" />
          </image>
       </ImageView>
-      <Button layoutX="811.0" layoutY="639.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Imprimer" textFill="#ee0983">
+      <Button layoutX="811.0" layoutY="639.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="64.0" prefWidth="128.0" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-border-color: #00abab;" text="Imprimer" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font>
