@@ -3,13 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/service/DbConnectinfo.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/controllers/StatistiqueViewController.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/controllers/EspaceFormationController.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/controllers/AjouterFormationController.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/controllers/ExampleTableViewController.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/models/Formation.java</file>
-            <file>file:/C:/Users/DevelopAndroid/Documents/NetBeansProjects/autre/src/models/PDFGeneration.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/DashboardAdminController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/Service/EvenementService.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/Service/PublicationService.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/Outils/DBConnect.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/ControleEvenement.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/ConsulterEvenementController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/MapFxmlController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/AjouterEvenementController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/ModifierPublicationController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/AfficherPublicationController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/DetailEvenementController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/ModifierEvenementController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/ControlePublication.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/Service/ParticipationnService.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/Outils/AutoCompleteComboBoxListener.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/AfficheEvenementController.java</file>
+            <file>file:/C:/wamp64/www/PiDev1/src/View/AjouterPublicationController.java</file>
         </group>
     </open-files>
 </project-private>
