@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -23,7 +28,7 @@
          </children>
       </VBox>
       <ListView fx:id="listview" layoutX="247.0" layoutY="176.0" onMouseClicked="#consulterInformation" prefHeight="139.0" prefWidth="542.0" />
-      <Label layoutX="247.0" layoutY="340.0" text="Présentation de l'historique">
+      <Label layoutX="248.0" layoutY="343.0" text="Présentation de l'historique">
          <font>
             <Font size="15.0" />
          </font>
@@ -33,6 +38,46 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <ListView fx:id="listview1" layoutX="247.0" layoutY="375.0" onMouseClicked="#consulterInformation" prefHeight="150.0" prefWidth="542.0" />
+      <TableView fx:id="table" layoutX="247.0" layoutY="377.0" onMouseClicked="#selectItem" prefHeight="150.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="titre" prefWidth="452.0" text="Titre" />
+          <TableColumn fx:id="date" minWidth="0.0" prefWidth="436.0" text="Date" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="histo" fitHeight="165.0" fitWidth="139.0" layoutX="84.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/histo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="favo" fitHeight="134.0" fitWidth="148.0" layoutX="84.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../favo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="deleteF" layoutX="822.0" layoutY="176.0" mnemonicParsing="false" onAction="#deleteFavoris" prefHeight="48.0" prefWidth="175.0" style="-fx-background-color: #A0522D; -fx-background-radius: 5px;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteFA" layoutX="822.0" layoutY="268.0" mnemonicParsing="false" onAction="#deleteAllF" prefHeight="48.0" prefWidth="175.0" style="-fx-background-color: #A0522D; -fx-background-radius: 5px;" text="Suppression totale" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="load" layoutX="244.0" layoutY="539.0" mnemonicParsing="false" onAction="#chargerFavoris" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: #A0522D; -fx-background-radius: 5px;" text="Charger le contenu" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteone" layoutX="506.0" layoutY="539.0" mnemonicParsing="false" onAction="#deleteOne" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: #A0522D; -fx-background-radius: 5px;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteall" layoutX="789.0" layoutY="539.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: #A0522D; -fx-background-radius: 5px;" text="Suppression totale" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

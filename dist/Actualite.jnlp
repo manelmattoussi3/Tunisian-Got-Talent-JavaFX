@@ -8,14 +8,11 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Actualite.jar" size="52647" download="eager" />
-    <jar href="lib\javax.mail-1.6.2.jar" size="659031" download="eager" />
-    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="Actualite.jar" size="584139" download="eager" />
+    <jar href="lib\javax.mail(1).jar" size="659033" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
     <jar href="lib\twilio-7.0.0-jar-with-dependencies.jar" size="6928990" download="eager" />
   </resources>
-  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Actualite" >
-    <param name="requiredFXVersion" value="8.0+"/>
-  </applet-desc>
   <jfx:javafx-desc  width="800" height="600" main-class="actualite.Actualite"  name="Actualite" />
   <update check="always"/>
 </jnlp>
