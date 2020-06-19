@@ -12,7 +12,7 @@
       <Label fx:id="txtDescription" layoutX="332.0" layoutY="410.0" style="-fx-font-size: 22; -fx-text-fill: #ffffff;" text="Label" />
       <ImageView fx:id="imageview" fitHeight="281.0" fitWidth="504.0" layoutX="119.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
       <Button layoutX="22.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnBackAction" style="-fx-background-color: transparent; -fx-border-color: #00abab; -fx-border-radius: 10px;" text="Retour" textFill="#6f002a" />
-      <Label layoutX="149.0" layoutY="18.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#6f002a">
+      <Label layoutX="171.0" layoutY="18.0" prefHeight="45.0" prefWidth="432.0" text="Conseil Vestimentaire" textFill="#6f002a">
          <font>
             <Font name="Bernard MT Condensed" size="36.0" />
          </font>

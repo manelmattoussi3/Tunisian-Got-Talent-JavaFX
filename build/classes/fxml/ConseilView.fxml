@@ -85,10 +85,10 @@
             </Button>
             <TableView fx:id="tableconseil" layoutX="188.0" layoutY="323.0" prefHeight="328.0" prefWidth="786.0" style="-fx-background-color: #00abab; -fx-border-color: #ee0983;">
               <columns>
-                <TableColumn fx:id="descriptionco" prefWidth="150.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Categorie" />
+                <TableColumn fx:id="categori1" prefWidth="150.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Description" />
                   <TableColumn fx:id="categori" prefWidth="124.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Candidat" />
                   <TableColumn fx:id="coa" prefWidth="103.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Coach" />
-                  <TableColumn fx:id="categori1" prefWidth="168.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Description" />
+                  <TableColumn fx:id="descriptionco" prefWidth="168.0" style="-fx-border-color: #d6f0f4; -fx-background-color: #e4d3dc;" text="Categorie" />
                   <TableColumn fx:id="image" prefWidth="240.0" style="-fx-background-color: #e4d3dc; -fx-border-color: #d6f0f4;" text="Image" />
               </columns>
             </TableView>

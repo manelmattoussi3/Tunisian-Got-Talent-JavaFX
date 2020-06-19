@@ -11,6 +11,7 @@ import service.ServiceActualite;
 import service.ServiceCategorie;
 import java.awt.Desktop.Action;
 import java.awt.Dialog;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,6 +27,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -348,6 +350,13 @@ public class FXMLDocumentController implements Initializable {
         
     }
     
-    
+   @FXML
+    public void Chat(ActionEvent event) throws IOException {
+        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/admin.fxml"));
+        Scene tableviewScene = new Scene(tableviewParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(tableviewScene);
+        window.show();
+    } 
   
 }

@@ -346,5 +346,12 @@ public class ActualiteUsersController implements Initializable {
         window.show();
         
     }
-
+@FXML
+    public void Chat(ActionEvent event) throws IOException {
+        Parent tableviewParent = FXMLLoader.load(getClass().getResource("/fxml/InterfaceUtlisateur.fxml"));
+        Scene tableviewScene = new Scene(tableviewParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(tableviewScene);
+        window.show();
+    } 
 }

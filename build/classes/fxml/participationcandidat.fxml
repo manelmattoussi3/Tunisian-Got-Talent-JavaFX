@@ -7,14 +7,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controllers.ParticipationcandidatController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ParticipationcandidatController">
    <children>
       <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: black;">
          <children>
             <TableView fx:id="table" layoutX="13.0" layoutY="65.0" prefHeight="278.0" prefWidth="576.0" style="-fx-border-color: #26d1b9#26d1b9; -fx-background-color: #ddc9c9;">
                <columns>
-                  <TableColumn fx:id="txtnom" prefWidth="124.0" style="-fx-border-color: #ddc9c9; -fx-background-color: #26d1b9;" text="Candidat" />
+                  <TableColumn fx:id="txtnom" prefWidth="124.0" style="-fx-border-color: #ddc9c9; -fx-background-color: #ddc9c9;" text="Candidat" />
                   <TableColumn fx:id="txtformation" prefWidth="450.0" style="-fx-border-color: #26d1b9; -fx-background-color: #ddc9c9;" text="Formation" />
                </columns>
             </TableView>

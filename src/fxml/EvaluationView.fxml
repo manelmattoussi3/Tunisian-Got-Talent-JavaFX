@@ -41,7 +41,7 @@
                         </Label>
                         <ComboBox fx:id="CmbCandidat" layoutX="177.0" layoutY="170.0" prefHeight="39.0" prefWidth="242.0" />
                         <ComboBox fx:id="Cmbformation" layoutX="281.0" layoutY="299.0" prefHeight="39.0" prefWidth="242.0" />
-                        <Label fx:id="labe1511" layoutX="22.0" layoutY="286.0" prefHeight="57.0" prefWidth="197.0" text="Categorie_Formation" textFill="WHITE">
+                        <Label fx:id="labe1511" layoutX="22.0" layoutY="286.0" prefHeight="57.0" prefWidth="197.0" text="Description_Formation" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>

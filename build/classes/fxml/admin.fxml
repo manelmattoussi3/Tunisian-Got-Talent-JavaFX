@@ -26,12 +26,10 @@
                     </font>
                 </Label>
                 <Button fx:id="gestionUti" layoutX="39.0" layoutY="146.0" mnemonicParsing="false" onMouseClicked="#handleButton1Action" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion d'utlisateurs " />
-            <Button fx:id="GestionVote" layoutX="39.0" layoutY="201.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de votes" />
-            <Button fx:id="GestionPublication" layoutX="39.0" layoutY="261.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de publication  " />
-            <Button fx:id="GestionCommentaire" layoutX="39.0" layoutY="316.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de commentaire " />
-            <Button fx:id="GestionSpo" layoutX="39.0" layoutY="377.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de sponsoring" />
-            <Button fx:id="Gestionrec" layoutX="39.0" layoutY="435.0" mnemonicParsing="false" onMouseClicked="#handleButton2Action" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de reclamation" />
-            <Button fx:id="gestionActualité" layoutX="39.0" layoutY="492.0" mnemonicParsing="false" onAction="#Actualitebutton" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion des actualités " />
+            <Button fx:id="GestionPublication" layoutX="39.0" layoutY="243.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de publication  " />
+            <Button fx:id="GestionCommentaire" layoutX="39.0" layoutY="349.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de commentaire " />
+            <Button fx:id="Gestionrec" layoutX="39.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#handleButton2Action" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion de reclamation" />
+            <Button fx:id="gestionActualité" layoutX="39.0" layoutY="538.0" mnemonicParsing="false" onAction="#Actualitebutton" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion des actualités " />
             </children>
         </Pane>
       <TextField fx:id="nomUt" layoutX="693.0" layoutY="296.0" />
@@ -48,6 +46,5 @@
          </image>
       </ImageView>
       <Button layoutX="876.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#handleButton6Action" prefHeight="25.0" prefWidth="107.0" text="Déconnexion" />
-      <Button fx:id="gestionActualité1" layoutX="37.0" layoutY="548.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="342.0" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Gestion des formations" />
     </children> 
 </AnchorPane>

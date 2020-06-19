@@ -36,12 +36,7 @@
                         <Image url="img/education.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="227.0" layoutY="295.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="272.0" style="-fx-border-radius: 20px; -fx-border-color: #00abab;" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Publication">
-                     <font>
-                        <Font name="System Bold Italic" size="17.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="224.0" layoutY="400.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="272.0" style="-fx-border-radius: 20px; -fx-border-color: #00abab;" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Evenements">
+                  <Button layoutX="227.0" layoutY="295.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="272.0" style="-fx-border-radius: 20px; -fx-border-color: #00abab;" styleClass="button2" stylesheets="@../styling/fullpackstyling.css" text="Candidature">
                      <font>
                         <Font name="System Bold Italic" size="17.0" />
                      </font>
@@ -49,11 +44,6 @@
                   <ImageView fx:id="I4" fitHeight="50.0" fitWidth="57.0" layoutX="168.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="img/film.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="I5" fitHeight="50.0" fitWidth="50.0" layoutX="164.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="img/oo.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="52.0" fitWidth="52.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">

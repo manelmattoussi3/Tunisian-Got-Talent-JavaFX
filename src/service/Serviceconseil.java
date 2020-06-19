@@ -112,7 +112,7 @@ public class Serviceconseil {
     }
 
     public ObservableList<ConseilModel> chercherConseil(String description) {
-        String requete = "select * from conseil where description like?";
+        String requete = "select * from conseil where categoricons like?";
         PreparedStatement ps = null;
         ObservableList<ConseilModel> lst = FXCollections.observableArrayList();
         try {
