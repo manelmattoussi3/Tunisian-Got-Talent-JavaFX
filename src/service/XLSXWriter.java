@@ -16,16 +16,16 @@ import java.util.ArrayList;
 import java.util.HashMap; 
 import java.util.Map; 
 import java.util.Set; 
-import org.apache.poi.ss.usermodel.Cell; 
-import org.apache.poi.ss.usermodel.Row; 
-import org.apache.poi.xssf.usermodel.XSSFSheet; 
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//import org.apache.poi.ss.usermodel.Cell; 
+//import org.apache.poi.ss.usermodel.Row; 
+//import org.apache.poi.xssf.usermodel.XSSFSheet; 
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  *
  * @author Khoubaib
  */
-public class XLSXWriter {
+/*public class XLSXWriter {
     //créer un fichier vide
     private static void createEmptyFile(String path){
         XSSFWorkbook workbook = new XSSFWorkbook();
@@ -101,3 +101,4 @@ public class XLSXWriter {
         catch (IOException ie) { ie.printStackTrace(); }
     }
 }
+*/

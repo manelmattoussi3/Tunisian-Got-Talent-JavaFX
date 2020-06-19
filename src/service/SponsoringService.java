@@ -110,13 +110,13 @@ public class SponsoringService {
             String req = "update sponsoring set description = ?, type = ?, image=?,  candidat_id= ?,date_debut=?,date_fin=? where id = ?";
             java.sql.Connection conn = DbConnectinfo.Connect();
             pst = (PreparedStatement) conn.prepareStatement(req);
-            pst.setString(1, c.getDescription());
-            pst.setString(2, c.getType());
-            pst.setString(3, c.getImage());
-            pst.setInt(4, c.getCandidat_id());
-            pst.setString(6, c.getDate_debut());
-            pst.setString(7, c.getDate_fin());
-            pst.setInt(5, c.getId());
+            pst.setString(2, c.getDescription());
+            pst.setString(3, c.getType());
+            pst.setString(1, c.getImage());
+            pst.setInt(6, c.getCandidat_id());
+            pst.setString(4, c.getDate_debut());
+            pst.setString(5, c.getDate_fin());
+            pst.setInt(7, c.getId());
 
             pst.executeUpdate();
             System.out.println("Mise à jour effectuée avec succès");
@@ -153,9 +153,9 @@ public class SponsoringService {
             rs = pst.executeQuery();
             while (rs.next()) {
                 sponsoring.setId(id);
-                sponsoring.setDescription(rs.getString(2));
-                sponsoring.setType(rs.getString(3));
-                sponsoring.setImage(rs.getString(4));
+                sponsoring.setDescription(rs.getString(3));
+                sponsoring.setType(rs.getString(4));
+                sponsoring.setImage(rs.getString(2));
                 // sponsoring.setSponsor_id(rs.getInt(5));
                 //sponsoring.setCandidat_id(rs.getInt(6));
                 sponsoring.setDate_debut(rs.getString(5));

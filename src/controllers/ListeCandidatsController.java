@@ -42,7 +42,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import service.XLSXWriter;
+//import service.XLSXWriter;
 
 /**
  * FXML Controller class
@@ -185,7 +185,7 @@ public class ListeCandidatsController implements Initializable {
       
      }
 
-    @FXML
+   /* @FXML
     private void btnExportAction(ActionEvent event) {
         Random random = new Random();
         String letters = "abcdefghijklmnopqrstuvwxyz";         
@@ -195,7 +195,7 @@ public class ListeCandidatsController implements Initializable {
         } 
         XLSXWriter.generateXLSX("src/Documents/" + prefix + "Candidats.xlsx", new ArrayList<Candidat>(listCandidat));
     }
-
+*/
     @FXML
     private void btnRéinitialiserAction(ActionEvent event) {
          ((Node) (event.getSource())).getScene().getWindow().hide();

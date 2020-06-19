@@ -176,7 +176,7 @@ public class ModifierSponsoringController implements Initializable {
          
       int test = 0;
 
-        if (txtDescription.getText().isEmpty() || (txtDescription.getText().matches("[a-zA-Z]+")==false)) {
+        if (txtDescription.getText().isEmpty() ) {
             er1.setText("Ce champ est obligatoire");
        // Alert alert = new Alert(Alert.AlertType.WARNING);
       // alert.setTitle("Description");
@@ -188,7 +188,7 @@ public class ModifierSponsoringController implements Initializable {
             er1.setText("");
             test +=1;
         }
-        if (txtType.getText().isEmpty() || (txtType.getText().matches("[a-zA-Z]+")==false)) {
+        if (txtType.getText().isEmpty() ) {
             er2.setText("Ce champ est obligatoire");
        // Alert alert = new Alert(Alert.AlertType.WARNING);
        //alert.setTitle("Type");
@@ -276,6 +276,8 @@ public class ModifierSponsoringController implements Initializable {
         sponsoring = sponsoringService.getSponsoring(idSpons);
         txtDescription.setText(sponsoring.getDescription());
         txtType.setText(sponsoring.getType());
+         txtdatedebut.setText(sponsoring.getDate_debut());
+          txtdatefin.setText(sponsoring.getDate_fin());
        int indexOfCandidat = -1;
         for (int i = 0; i < listCondidat.size(); i++) {
             if(listCondidat.get(i).getId() == sponsoring.getCandidat_id()) {
@@ -288,10 +290,10 @@ public class ModifierSponsoringController implements Initializable {
         btnChoisirImage.setText(sponsoring.getImage());
       // txtdatedebut.setValue((sponsoring.getDate_debut()));
      // txtdatefin.setValue((sponsoring.getDate_fin()))
-     String datedebut = txtdatedebut.getText();
+   /*  String datedebut = txtdatedebut.getText();
         String datefin = txtdatefin.getText();
       sponsoring.setDate_debut(datedebut);
-        sponsoring.setDate_fin(datefin);
+        sponsoring.setDate_fin(datefin);*/
     }
 }
 

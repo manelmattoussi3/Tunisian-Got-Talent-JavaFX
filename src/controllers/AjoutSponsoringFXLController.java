@@ -191,7 +191,7 @@ public class AjoutSponsoringFXLController implements Initializable {
             fileChooser.setTitle("Open resource file");
             fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image Files", "*.png"));
             File path = selectedFile.getAbsoluteFile();
-            destinationUrl = "src/Images/" + prefix + selectedFile.getName();
+            destinationUrl = "src/Photo/" + prefix + selectedFile.getName();
             Path destinationPath = Paths.get(destinationUrl);
             Path sourcePath = Paths.get(selectedFile.getAbsolutePath());
             Files.copy(sourcePath, destinationPath);
